@@ -1,0 +1,670 @@
+/* ------------ОБНУЛЕНИЕ-------- */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 1;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #000;
+}
+
+ul li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+/* ------------Шрифты--------------- */
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BunnyFunny";
+  src: url("../fonts/BunnyFunny.eot");
+  src: url("../fonts/BunnyFunny.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/BunnyFunny.woff") format("woff"),
+    url("../fonts/BunnyFunny.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* -----------Спецификация--------------- */
+* {
+  font-family: "Open Sans Regular";
+}
+
+.container {
+  max-width: 1140px;
+  height: 100%;
+  margin: 0px auto;
+}
+
+h1,
+h2 {
+  font-family: "BunnyFunny";
+}
+/* общие стили в секциях */
+section {
+  background: #f7f0f0;
+}
+.section-wrap {
+  padding: 100px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap-text {
+  width: 50%;
+  text-align: center;
+}
+.text__title {
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+.text__subtitle {
+  margin: 30px 0px 30px 0px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+}
+.text__desc {
+  font-size: 14px;
+  line-height: 23px;
+  text-align: justify;
+}
+.text__title::before {
+  position: absolute;
+  content: "";
+  width: 59.19px;
+  height: 5px;
+  background: #e8c300;
+  border-radius: 50px;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -30px;
+}
+.section__img__wrap {
+  width: 50%;
+}
+.section__img {
+  position: relative;
+  max-width: 70%;
+  margin: 0px auto;
+}
+.section__img img {
+  width: 100%;
+}
+.section__img__right::before {
+  position: absolute;
+  content: "";
+  right: -12%;
+  top: 27%;
+  width: 42%;
+  height: 42%;
+  border: 15px solid #e8c300;
+}
+
+.section__img__left::before {
+  position: absolute;
+  content: "";
+  left: -12%;
+  top: 27%;
+  width: 42%;
+  height: 42%;
+  border: 15px solid #e8c300;
+}
+/* --------------HEADER------------- */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.header::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 3;
+}
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  /* z-index: 2; */
+}
+.header__menu {
+  width: 100%;
+}
+.header__list {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 3;
+}
+.header__list li {
+  padding: 40px 0px 0px 0px;
+}
+.header__list li a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.header__burger {
+  display: none;
+}
+.header__logo {
+  padding: 25px 0px 0px 0px;
+}
+.header__logo img {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  z-index: 5;
+}
+/* -----------SECTION OFFER---------- */
+.offer {
+  background: url(../img/offer.png) no-repeat center top/ cover;
+  width: 100%;
+  padding: 326px 0px 90px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 12px;
+  position: relative;
+}
+
+.offer__subtitle {
+  letter-spacing: 0.5em;
+  margin: 0px 0px 24px 0px;
+}
+.offer__title {
+  font-size: 96px;
+  letter-spacing: 10px;
+  position: relative;
+}
+
+.offer__title::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 5.11px;
+  background: #e8c300;
+  border-radius: 50px;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -30px;
+}
+
+.btn-switch__wrap {
+  max-width: 450px;
+  margin: 40px auto 92px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-switch {
+  width: 200px;
+  height: 60px;
+  background: transparent;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+.btn-switch.active {
+  background: #e8c300;
+  border: none;
+}
+
+.anchor-wrap {
+  width: 60px;
+  height: 60px;
+  margin: 0px auto;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 9px 0px 0px 0px;
+}
+.anchor {
+  width: 40px;
+  height: 40px;
+  margin: 0px auto;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.anchor::before,
+.anchor::after {
+  position: absolute;
+  content: "";
+  background: #333333;
+  width: 10px;
+  height: 2px;
+  top: 20px;
+}
+.anchor::before {
+  transform: rotate(45deg);
+  left: 12px;
+}
+.anchor::after {
+  transform: rotate(-45deg);
+  right: 12px;
+}
+
+.social-link__wpap {
+  position: fixed;
+  width: 60px;
+  top: 350px;
+  right: 40px;
+  z-index: 50;
+}
+.social-link__item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 20px 0px 0px 0px;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.social-link__item i {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 40px;
+}
+.social-link__item:hover i {
+  font-size: 20px;
+}
+/* ------------------Section about------------------ */
+/* в спецификации */
+/* ------------------Section team------------------ */
+.team {
+  background: url(../img/team.png) no-repeat center top/ cover;
+  color: #ffffff;
+}
+.text__subtitle__team,
+.text__desc__team {
+  color: rgba(255, 255, 255, 0.9);
+}
+/* ---------------------Section booking----------------- */
+.booking__wrap {
+  width: 50%;
+  text-align: center;
+}
+.booking__form {
+  margin: 50px auto 0px auto;
+  max-width: 564px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.input {
+  background: #e5e5e5;
+  border-radius: 5px;
+  height: 60px;
+  padding: 0px 0px 0px 15px;
+}
+
+.booking__form__input,
+.select__wrap__booking {
+  width: 49%;
+  margin: 0px 0px 10px 0px;
+}
+.select_input {
+  color: rgba(51, 51, 51, 0.5);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  margin: 0;
+}
+.select__wrap {
+  position: relative;
+}
+.select__wrap::before,
+.select__wrap::after {
+  position: absolute;
+  content: "";
+  background: rgba(51, 51, 51, 0.5);
+  width: 10px;
+  height: 2px;
+  top: 30px;
+}
+.select__wrap::before {
+  transform: rotate(45deg);
+  right: 18px;
+}
+.select__wrap::after {
+  transform: rotate(-45deg);
+  right: 12px;
+}
+
+.input__data {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.btn__form {
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #e8c300;
+  height: 60px;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.2);
+}
+.btn__form:hover {
+  background-color: #caac15;
+}
+.btn__form:active {
+  box-shadow: none;
+}
+.booking__btn__form {
+  width: 100%;
+}
+/* ------------------Section Specialties--------------- */
+.specialties {
+  padding: 0;
+}
+.specialties__wrap {
+  padding: 30px 0px 100px 0px;
+  background: url(../img/sliderBack.png) no-repeat center top/ cover;
+  color: #ffffff;
+}
+.specialties__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+.mini-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* specialties__slider */
+.specialties__slider {
+  position: relative;
+}
+
+.specialties__slider .slick-list {
+  overflow: hidden;
+}
+.specialties__slider .slick-track{
+  display: flex;
+  align-items: flex-start;
+}
+
+.specialties__slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -52px;
+}
+.specialties__slider .slick-dots li {
+  margin: 0px 10px;
+}
+.specialties__slider .slick-dots li.slick-active button {
+background: #ffffff;
+}
+.specialties__slider .slick-dots button {
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+/* ------------------Section Menu--------------- */
+.prices {
+  padding: 100px 0px;
+}
+.prices__wrap-text {
+ margin: 0px auto;
+ width: 100%;
+ max-width: 565px;
+}
+.prices__menu {
+  max-width: 840px;
+  margin: 0px auto 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.prices__menu__item {
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing: 1px;
+padding: 10px 15px;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.prices__desc__item {
+  padding: 40px 0px 0px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.prices__desc__subitem {
+
+}
+.prices__desc__subitem li {
+max-width: 363px;
+margin: 0px 0px 25px 0px;
+}
+.meal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.meal__desc {
+  color: rgba(17, 1, 1, 0.5);
+  margin: 5px 0px 0px 0px;
+}
+.tab-hidden {
+  display: none;
+}
+
+.prices__menu__item.active {
+  background: #e8c300;
+  color: #ffffff;
+}
+/* ------------------Section Private--------------- */
+.private {
+  background: url(../img/sliderBack.png) no-repeat center top/ cover;
+  color: #f7f0f0;
+}
+.private .section-wrap {
+padding: 10px 0px;
+}
+
+.private .specialties__title {
+  padding-top: 50px;
+}
+.section__img__weddings::after  {
+  font-family: "BunnyFunny";
+  font-size: 2vw;
+  text-transform: uppercase;
+    position: absolute;
+    content: "weddings";
+    right: -29%;
+    top: 42.5%;
+    width: 84%;
+    height: 14%;
+    background-color: #000;
+    color: #ffffff;
+    transform: rotate(90deg);
+    padding: 4%;
+    letter-spacing: 2px;
+  }
+.section__img__corporate::after {
+  font-family: "BunnyFunny";
+  font-size: 2vw;
+  text-transform: uppercase;
+    position: absolute;
+    content: "corporate pzrties";
+    left: -27%;
+    top: 42.5%;
+    width: 84%;
+    height: 14%;
+    background-color: #000;
+    color: #ffffff;
+    transform: rotate(-90deg);
+    padding: 4%;
+    letter-spacing: 2px;
+}
+
+/* ------------------Section Place--------------- */
+.place .container {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+/* place__slider */
+.place__slider .slick-list {
+  overflow: hidden;
+}
+.place__slider .slick-track{
+  display: flex;
+
+}
+/* ------------------Section Contact--------------- */
+.contact .section-wrap {
+  display: block;
+}
+.contact__form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact__form__input {
+  width: 32.5%;
+  margin: 0px 0px 12px 0px;
+}
+.contact__form__input__meccage {
+  height: 120px;
+  width: 100%;
+  margin: 0px 0px 12px 0px;
+  font-size: 14px;
+  padding: 15px;
+}
+.contact__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 49%;
+  height: 60px;
+}
+
+.contact__list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact__list__item p {
+  font-size: 12px;
+}
+.contact__list__item i {
+color: #E8C300;
+margin: 0px 12px 0px 0px;
+}
+
+.contact__btn__form {
+  width: 49%;
+}
+
+/* ------------------Section Map--------------- */
+/* ...... */
+/* ------------------Footer--------------- */
+footer {
+  height: 100px;
+  background: rgba(0, 0, 0, 0.9);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light__footer__text {
+  color: rgba(255, 255, 255, 0.9);
+}
+/* ----------------------------------------------- */

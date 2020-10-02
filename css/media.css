@@ -1,0 +1,222 @@
+@media screen and (max-width: 1200px) {
+  .social-link__wpap {
+    display: none;
+  }
+  .offer, .adout, .team, .booking, .prices, .private, .contact, .specialties__wrap {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .offer {
+    padding: 210px 25px 90px 25px;
+  }
+  .prices__desc__subitem__left {
+    display: none;
+  }
+  .prices__desc__item {
+    justify-content: space-evenly;
+  }
+  .prices__menu {
+    padding: 0px 20px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .header__menu {
+    position: fixed;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease 0s;
+  }
+  .header__menu__right {
+    padding: 0px 0px 0px 30px;
+  }
+  .header__menu__left {
+    background: #584c04;
+    opacity: 0.9;
+    padding: 100px 0px 0px 30px;
+  }
+  .header__menu__right.active {
+    top: 290px;
+  }
+  .header__menu__left.active {
+    top: 0;
+  }
+  .header__body {
+    align-items: center;
+    padding: 0px 25px;
+  }
+  .header__logo {
+    padding: 10px 0px;
+  }
+  .header__logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .header__list {
+    display: block;
+  }
+  .header__list li {
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+  }
+  .header__list li a {
+    display: block;
+    padding: 12px 0px;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+  .header__burger::before,
+  .header__burger::after {
+    position: absolute;
+    content: "";
+    background: #ffffff;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+
+  .header__burger span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    left: 0;
+    background: #ffffff;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active span {
+    display: none;
+  }
+
+  .offer {
+    padding: 150px 25px 40px 25px;
+  }
+  .btn-switch {
+    width: 48%;
+  }
+  .section-wrap {
+    flex-wrap: wrap;
+    padding: 50px 0px;
+  }
+  .prices {
+    padding: 50px 0px;
+  }
+  .section__img__wrap {
+    width: 100%;
+  }
+  .mini-wrap {
+    flex-direction: column;
+  }
+  .wrap-text {
+    width: 80%;
+    margin: 0px auto;
+  }
+  .booking__wrap {
+    width: 100%;
+  } 
+  .section__img {
+    width: 60%;
+  }
+  .contact__btn__form, .contact__list {
+    width: 100%;
+  }
+  .prices__desc__subitem__right {
+    display: none;
+  }
+  .place__slider__item img {
+    width: 300px;
+  }
+  .text__subtitle  {
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 720px) {
+  .place__slider__item img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .prices__menu {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .prices__menu__item {
+    width: 25%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 560px) {
+  .section__img {
+    width: 90%;
+  }
+  .text__subtitle {
+    line-height: 22px;
+  }
+  .text__desc {
+    line-height: 19px;
+  }
+  .contact__list {
+    justify-content: space-around;
+  }
+  .contact__list__item:nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .offer__title {
+    font-size: 50px;
+  }
+  .booking__form__input, .select__wrap, .contact__form__input {
+    width: 100%;
+  }
+  .input {
+    height: 50px;
+  }
+  .mini-wrap .wrap-text {
+    width: 95%;
+  }
+  .mini-wrap .wrap-text {
+    width: 95%;
+  }
+  .mini-wrap .text__desc {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 380px) {
+  .meal {
+    font-size: 16px;
+  }
+  .contact__list__item:nth-child(2) {
+    display: none;
+  }
+}
