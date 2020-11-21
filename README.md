@@ -1,4 +1,4 @@
-[English](https://github.com/Pavel-Sol/clothing-store/blob/master/README.md) | [Russian](https://github.com/Pavel-Sol/clothing-store/blob/master/README-RU.md)
+[English](https://github.com/Pavel-Sol/Hungry-people-landing-page/blob/master/README.md) | [Russian](https://github.com/Pavel-Sol/Hungry-people-landing-page/blob/master/README-Ru.md)
 
 # Hungry-people :hamburger:
 
